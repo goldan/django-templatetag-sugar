@@ -20,7 +20,7 @@ def test_tag_2(context, model, limit, asvar=None):
     if asvar:
         context[asvar] = objs
         return ""
-    return unicode(objs)
+    return str(objs)
 
 @tag(register, [Variable()])
 def test_tag_3(context, val):
